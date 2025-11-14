@@ -1,49 +1,3 @@
-# https://qiskit-community.github.io/qiskit-machine-learning/tutorials/01_neural_networks.html
-
-# https://github.com/qiskit-community/qiskit-machine-learning?tab=readme-ov-file
-
-# https://github.com/Qiskit/textbook/tree/main/notebooks/quantum-machine-learning#
-
-
-
-""" 
-https://qiskit-community.github.io/qiskit-machine-learning/tutorials/
-
-https://github.com/qiskit-community
-
-
-https://github.com/qiskit-community/qiskit-machine-learning/blob/stable/0.8/docs/tutorials/01_neural_networks.ipynb
-
-https://github.com/qiskit-community/qiskit-machine-learning/blob/stable/0.8/docs/tutorials/02_neural_network_classifier_and_regressor.ipynb
-
-https://github.com/qiskit-community/qiskit-machine-learning/blob/stable/0.8/docs/tutorials/02a_training_a_quantum_model_on_a_real_dataset.ipynb
-
-
-
-"""
-
-
-
-
-
-### https://qiskit-community.github.io/qiskit-machine-learning/tutorials/03_quantum_kernel.html
-
-
-### https://github.com/qiskit-community/qiskit-machine-learning/blob/stable/0.8/docs/tutorials/03_quantum_kernel.ipynb
-
-
-
-
-
-
-
-"""
-https://qiskit-community.github.io/qiskit-machine-learning/tutorials/03_quantum_kernel.html
-
-https://github.com/qiskit-community/qiskit-machine-learning/blob/main/docs/tutorials/03_quantum_kernel.ipynb
-
-"""
-
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="scipy")
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -51,7 +5,6 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 from sklearn.exceptions import ConvergenceWarning
 warnings.filterwarnings("ignore", category=ConvergenceWarning)
-
 
 
 # GPR (Gaussian Process Regressor)
@@ -84,7 +37,6 @@ svih 4510 izvlacenja
 """
 
 
-
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import DotProduct, WhiteKernel
 import random
@@ -92,7 +44,6 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from qiskit_machine_learning.utils import algorithm_globals
-
 
 
 # =========================
@@ -142,7 +93,6 @@ for i in range(7):  # 6 brojeva + dodatni broj
     gpr.fit(X_scaled, y_scaled)
 
 
-
     # =========================
     # Predikcija sledeće kombinacije iz svih prethodnih
     # =========================
@@ -161,13 +111,13 @@ Predikcija za broj 1: 5
 Predikcija za broj 2: 10
 
 --- Treniranje QGPR modela za broj 3 ---
-Predikcija za broj 3: 15
+Predikcija za broj 3: x
 
 --- Treniranje QGPR modela za broj 4 ---
-Predikcija za broj 4: 20
+Predikcija za broj 4: x
 
 --- Treniranje QGPR modela za broj 5 ---
-Predikcija za broj 5: 25
+Predikcija za broj 5: x
 
 --- Treniranje QGPR modela za broj 6 ---
 Predikcija za broj 6: 30
@@ -188,40 +138,5 @@ print()
 
 """
 === Predviđena sledeća loto kombinacija (7) ===
-5 10 15 20 25 30 35
-"""
-
-
-
-
-
-
-
-
-"""
-cisti kesh
-
-pip cache purge
-
-"""
-
-
-"""
-Obriši cache
-Na Mac/Linux:
-rm -rf ~/.cache/pip
-"""
-
-
-"""
-=== Qiskit Version Table ===
-Software                       Version        
----------------------------------------------
-qiskit                         1.4.4          
-qiskit_machine_learning        0.8.3          
-
-=== System Information ===
-Python version                 3.11.13        
-OS                             Darwin         
-Time                           Tue Sep 09 18:11:49 2025 CEST
+5 10 x x x 30 35
 """

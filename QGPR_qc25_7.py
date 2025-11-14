@@ -245,17 +245,11 @@ full_circuit.draw('mpl', fold=40)
 # plt.show()
 
 
-# The only valid choices are 
-# text, latex, latex_source, and mpl
-
-
 # Kompaktni prikaz kola
 print("\nKompaktni prikaz kvantnog kola (text):\n")
 # print(full_circuit.draw('text'))
 """
 Kompaktni prikaz kvantnog kola (text):
-
-
 """
 
 
@@ -268,45 +262,9 @@ circuit_drawer(full_circuit, output='latex', style={"backgroundcolor": "#EEEEEE"
 # plt.show()
 
 
-# import tinytex
-# pip install tinycio
-# pip install torchvision
-# tinytex.install()
-
-
-
-"""
-# Sačuvaj kao PDF
-img1 = full_circuit.draw('latex')
-img1.save("/Users/milan/Desktop/GHQ/data/qc35_7_1.pdf")
-
-
-# Sačuvaj kao sliku u latex formatu jpg
-img2 = full_circuit.draw('latex')
-img2.save("/Users/milan/Desktop/GHQ/data/qc35_7_2.jpg")
-
-
-# Sačuvaj kao sliku u latex formatu png
-img3 = full_circuit.draw('latex')
-img3.save("/Users/milan/Desktop/GHQ/data/qc35_7_3.png")
-
-
 # Sačuvaj kao sliku u matplotlib formatu jpg
 img4 = full_circuit.draw('mpl', fold=40)
-img4.savefig("/Users/milan/Desktop/GHQ/data/qc35_7_4.jpg")
-
-# Sačuvaj kao sliku u matplotlib formatu png
-img5 = full_circuit.draw('mpl', fold=40)
-img5.savefig("/Users/milan/Desktop/GHQ/data/qc35_7_5.png")
-"""
-
-
-
-
-
-# Sačuvaj kao sliku u matplotlib formatu jpg
-img4 = full_circuit.draw('mpl', fold=40)
-img4.savefig("/Users/milan/Desktop/GHQ/KvantniRegresor/6QGPR/QGPR_qc25_7_4.jpg")
+img4.savefig("/KvantniRegresor/6QGPR/QGPR_qc25_7_4.jpg")
 
 
 
@@ -395,10 +353,10 @@ print("\n========================================\n")
 ========================================
 
 Mapirani brojevi (0-range):
-[0, 0, 0, 0, 0, 0, 4]
+[0, 0, x, x, x, 0, 4]
 
 Finalni loto brojevi (1–39):
-[1, 2, 3, 4, 5, 6, 11]
+[1, 2, x, x, x, 6, 11]
 
 N = 100 zadnjih kombinacija
 

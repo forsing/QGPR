@@ -66,7 +66,7 @@ random.seed(SEED)
 algorithm_globals.random_seed = SEED
 
 # 1. Učitaj loto podatke
-df = pd.read_csv("/Users/4c/Desktop/GHQ/data/loto7_4584_k23.csv", header=None).iloc[:, :7]
+df = pd.read_csv("/data/loto7_4584_k23.csv", header=None).iloc[:, :7]
 
 
 ###################################
